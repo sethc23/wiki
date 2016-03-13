@@ -5,6 +5,8 @@
 
 	wget https://www.graylog2.org/download/release/graylog2-server/548a1deae4b0a06d87eea030
 
+
+
 	wget https://www.graylog2.org/download/release/graylog2-web-interface/548a1deae4b0a06d87eea030
 	
 
