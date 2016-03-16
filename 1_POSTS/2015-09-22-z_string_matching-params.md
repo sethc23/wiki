@@ -6,7 +6,9 @@ tags: pgxz-function function-definition work-in-progress
 
 
 ## **string_matching(*qry_a*, *qry_b*, *params_as_json*)**
+
 </br>
+
 #### _Methodology_:
 
 
@@ -153,6 +155,7 @@ SELECT * FROM z_string_matching(
 </table>
 </div>
 </br>
+
 Of further note:  
 
 1. the Jaro-Winkler algorithm values first letter(s) matches >> last letter matches
@@ -179,6 +182,7 @@ Some general points:
 
 
 *PARAMETERS*:
+
 <br>
 
 > _**`first_match_only`**_: Upon finding a `b_str` match for a particular `a_str` given the input criteria, stop further processing re: `a_str` and return the first-matched `b_str`.  This option often works well in conjunction with minimal iterative steps and high-score conditions to quickly extract the easy matches and minimize the number of future, more arduous, steps.
