@@ -65,7 +65,7 @@ SELECT * FROM z_string_matching(
 
 <br>
 
-#### Each produces the [generally accepted results](https://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance):
+#### each produces the [generally accepted results](https://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance):
 
 <br>
 
