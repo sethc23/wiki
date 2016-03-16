@@ -1,1 +1,0 @@
-../../_posts/2015-09-18-basic_difference_between_lua_and_python.markdown
