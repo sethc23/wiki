@@ -1,16 +1,53 @@
 # Doc Analysis
 ---
 
-### Tesseract
+### [Tesseract](https://github.com/tesseract-ocr/tesseract/wiki/Compiling)
 - [API Examples](https://github.com/tesseract-ocr/tesseract/wiki/APIExample)
 - [C-API Reference (v. 4.0)](https://tesseract-ocr.github.io/a00638.html#af05c5f7be48946d521660f05323417e7)
 - [C-API Reference (v. 3.0)](http://tess4j.sourceforge.net/docs/docs-3.0/net/sourceforge/tess4j/TessAPI1.html)
 - [User Notes for C-API](http://stackoverflow.com/questions/30688840/access-confidence-in-python-tesseract)
+- ##### Training:
+  - [Terese: A Tesseract Correction Tool](http://terese.sourceforge.net/)
+  - [HTML editor](https://github.com/tmbdev/ocropy/wiki/Working-with-Ground-Truth)
+  - Tesseract's [ScrollView.jar](https://github.com/tesseract-ocr/tesseract/wiki/ViewerDebugging)
+
+- ##### Install:
+  ```bash
+  export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig/:/usr/lib/x86_64-linux-gnu/pkgconfig:/usr/lib/pkgconfig/
+  export LD_LIBRARY_PATH=/usr/local/lib/ 
+  export LD_RUN_PATH=/usr/local/lib
+  sudo ldconfig -v
+  export LEPTONICA_LIBS="-L/usr/local/lib -llept"
+  export LEPTONICA_CFLAGS="-I/usr/local/include/leptonica"
+  git clone https://github.com/tesseract-ocr/tesseract.git
+  cd tesseract && ./autogen.sh
+  ./configure --enable-debug --enable-opencl
+  LDFLAGS="-L/usr/local/lib" CFLAGS="-I/usr/local/include" make
+  make install
+  unset LEPTONICA_LIBS && unset LEPTONICA_CFLAGS
+  
+  sudo ldconfig
+  
+  make training
+  sudo make training-install
+  
+  cd java
+  wget -L -o piccolo2d-core-3.0.jar http://search.maven.org/remotecontent?filepath=org/piccolo2d/piccolo2d-core/3.0/piccolo2d-core-3.0.jar
+  wget -L -o piccolo2d-extras-3.0.jar http://search.maven.org/remotecontent\?filepath\=org/piccolo2d/piccolo2d-extras/3.0/piccolo2d-extras-3.0.jar
+  make ScrollView.jar
+  
+  export SCROLLVIEW_PATH="/home/ub2/GIT_REPOS/tesseract/java"
+  ```
 
 
-### Leptonica
+### [Leptonica](http://www.leptonica.org/download.html)
 - [Leptonica: C-API Reference](http://tpgit.github.io/UnOfficialLeptDocs/leptonica/functions.html)
-
+- ##### Install:
+  ```bash
+  ./configure
+  make
+  make install
+  ```
 
 ### OpenCV
 - [Examples](http://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials)
@@ -24,7 +61,6 @@
 
 ### GUIs:
 - [Paperwork](https://github.com/jflesch/paperwork)
-- [Terese: A Tesseract Correction Tool](http://terese.sourceforge.net/)
 
  
 ### Command Line:
