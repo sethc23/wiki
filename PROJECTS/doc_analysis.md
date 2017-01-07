@@ -1,15 +1,31 @@
 # Doc Analysis
 ---
 
-```bash
-# Make B&W
-convert -normalize -threshold 50% -brightness-contrast 0x10 in.JPG 1blackwhite.pbm
+### Tesseract
+- [API Examples](https://github.com/tesseract-ocr/tesseract/wiki/APIExample)
+- [C-API Reference (v. 4.0)](https://tesseract-ocr.github.io/a00638.html#af05c5f7be48946d521660f05323417e7)
+- [C-API Reference (v. 3.0)](http://tess4j.sourceforge.net/docs/docs-3.0/net/sourceforge/tess4j/TessAPI1.html)
+- [User Notes for C-API](http://stackoverflow.com/questions/30688840/access-confidence-in-python-tesseract)
 
-```
+
+### Leptonica
+- [Leptonica: C-API Reference](http://tpgit.github.io/UnOfficialLeptDocs/leptonica/functions.html)
+
+
+### OpenCV
+- [Examples](http://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials)
+- [Doc Scanner In A Day: Part 1](http://www.pyimagesearch.com/2014/09/01/build-kick-ass-mobile-document-scanner-just-5-minutes/)
+- [Doc Scanner In A Day: Part 2](http://www.pyimagesearch.com/2014/08/25/4-point-opencv-getperspective-transform-example/)
+
+
+### ImageMagick
+- [Positional Arg Clarity](http://www.imagemagick.org/discourse-server/viewtopic.php?t=18241)
+
 
 ### GUIs:
 - [Paperwork](https://github.com/jflesch/paperwork)
 - [Terese: A Tesseract Correction Tool](http://terese.sourceforge.net/)
+
  
 ### Command Line:
 - `identify [-verbose]`
@@ -61,34 +77,26 @@ convert -normalize -threshold 50% -brightness-contrast 0x10 in.JPG 1blackwhite.p
 
 - `pnmconvol`
 
+- - - 
 
 
-  > **EXAMPLES**:
-
-    ```bash
+  ```bash
     pnmscale -xysize 2400 3000 image.pgm | pgmtopbm -hil | pnmtops -scale 0.25 > image.ps
 
     jpegtopnm \
-      /home/ub2/ARCHIVE/DOC_IMAGES/test_orig.jpg \
-      > /home/ub2/ARCHIVE/DOC_IMAGES/test_pnm.ppm
+      ~/ARCHIVE/DOC_IMAGES/test_orig.jpg \
+      > ~/ARCHIVE/DOC_IMAGES/test_pnm.ppm
       
     ppmtopgm \
-      /home/ub2/ARCHIVE/DOC_IMAGES/test_pnm.ppm|pgmtopbm \
-      > /home/ub2/ARCHIVE/DOC_IMAGES/test_pnm_conv.pbm
+      ~/ARCHIVE/DOC_IMAGES/test_pnm.ppm|pgmtopbm \
+      > ~/ARCHIVE/DOC_IMAGES/test_pnm_conv.pbm
       
     convert -deskew 40% test_pnm_conv_morphed.jpg \
       jpegtopnm - | pnmtotiff - | \
       tesseract - - pdf|pdftotext -layout - -
-      
-    ```
+    
+    convert -normalize -threshold 50% -brightness-contrast 0x10 in.JPG 1blackwhite.pbm
+  ```
 
-- [Tesseract: API Examples](https://github.com/tesseract-ocr/tesseract/wiki/APIExample)
-- [Teseract: C-API Reference (v. 4.0)](https://tesseract-ocr.github.io/a00638.html#af05c5f7be48946d521660f05323417e7)
-- [Teseract: C-API Reference (v. 3.0)](http://tess4j.sourceforge.net/docs/docs-3.0/net/sourceforge/tess4j/TessAPI1.html)
-- [Leptonica: C-API Reference](http://tpgit.github.io/UnOfficialLeptDocs/leptonica/functions.html)
-- [User Notes for C-Tesseract](http://stackoverflow.com/questions/30688840/access-confidence-in-python-tesseract)
-- [OpenCV Examples](http://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials)
-- [Doc Scanner In A Day Example](http://www.pyimagesearch.com/2014/09/01/build-kick-ass-mobile-document-scanner-just-5-minutes/)
-- [Pt2](http://www.pyimagesearch.com/2014/08/25/4-point-opencv-getperspective-transform-example/)
 
-- [ImageMagick: Positional Arg Clarity](http://www.imagemagick.org/discourse-server/viewtopic.php?t=18241)
+
