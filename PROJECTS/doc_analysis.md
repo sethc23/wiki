@@ -65,4 +65,13 @@ convert -deskew 40% test_pnm_conv_morphed.jpg \
   
 ```
 
-[User Notes for C-Tesseract](http://stackoverflow.com/questions/30688840/access-confidence-in-python-tesseract)
+- [Tesseract: API Examples](https://github.com/tesseract-ocr/tesseract/wiki/APIExample)
+- [Teseract: C-API Reference (v. 4.0)](https://tesseract-ocr.github.io/a00638.html#af05c5f7be48946d521660f05323417e7)
+- [Teseract: C-API Reference (v. 3.0)](http://tess4j.sourceforge.net/docs/docs-3.0/net/sourceforge/tess4j/TessAPI1.html)
+- [Leptonica: C-API Reference](http://tpgit.github.io/UnOfficialLeptDocs/leptonica/functions.html)
+- [User Notes for C-Tesseract](http://stackoverflow.com/questions/30688840/access-confidence-in-python-tesseract)
+- [OpenCV Examples](http://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials)
+- [Doc Scanner In A Day Example](http://www.pyimagesearch.com/2014/09/01/build-kick-ass-mobile-document-scanner-just-5-minutes/)
+- [Pt2](http://www.pyimagesearch.com/2014/08/25/4-point-opencv-getperspective-transform-example/)
+- [Terese: A Tesseract Correction Tool](http://terese.sourceforge.net/)
+- [ImageMagick: Positional Arg Clarity](http://www.imagemagick.org/discourse-server/viewtopic.php?t=18241)
