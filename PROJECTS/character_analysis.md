@@ -65,37 +65,31 @@
 ## Example tmux Key Bindings
 
 ### context: WINDOW
-| ACTION              | KEY     | BINDING | DESCRIPTION / [shell] MAPPING | CMD |
-|:---                 |:---:    |:---      |:---          | |
-| last-window         | S-C-a   | | | `bind -n S-C-a last-window`
-| previous-window     | S-Left   | | shift arrow left | `bind -n S-Left  previous-window`
-| next-window         | S-Right   | | shift arrow right | `bind -n S-Right next-window`
-||||Split pane|`bind -n M-<vertical bar> split-window -h`|
-|||||`bind -n M-- split-window -v`|
+| ACTION              | KEY              | BINDING | DESCRIPTION / [shell] MAPPING | CMD |
+|:---                 |:---:             |:---      |:---          | |
+| last-window         | S-C-a            | | | `bind -n S-C-a last-window`|
+| previous-window     | S-Left           | | S arrow-left | `bind -n S-Left  previous-window`|
+| next-window         | S-Right          | | S arrow-right | `bind -n S-Right next-window`|
+| split-window -h     | M--              | M--      | Split pane|`bind -n M-<vertical bar> split-window -h`|
+| split-window -v     | M-<vertical bar> | M-<vbar> ||`bind -n M-- split-window -v`|
 
 ## context: PANE
-| ACTION              | KEY     | BINDING | DESCRIPTION / [shell] MAPPING | CMD |
-|:---                 |:---:    |:---      |:---          | |
-|resize-pane -L 5||0x1b 0x68|ctrl+alt+shift+left   |`bind -n M-h resize-pane -L 5`|
-|resize-pane -R 5||0x1b 0x6C|ctrl+alt+shift+right  |`bind -n M-l resize-pane -R 5`|
-|resize-pane -U 5||0x1b 0x6A|ctrl+alt+shift+up     |`bind -n M-j resize-pane -U 5`|
-|resize-pane -D 5||0x1b 0x6B|ctrl+alt+shift+down   |`bind -n M-k resize-pane -D 5`|
-|select-pane -L|||cmd+alt+left|`bind -n M-Left select-pane -L`|
-|select-pane -R|16 / 0x10||cmd+alt+right  |`bind -n M-Right select-pane -R`|
-|select-pane -U|0x1b 0x6E||cmd+alt+up     |`bind -n M-Up select-pane -U`|
-|select-pane -D|0x1b 0x70||cmd+alt+down   |`bind -n M-Down select-pane -D`|
-|||||``|
-|||||``|
-|||||``|
-|||||``|
-|||||``|
-|||||``|
-|||||``|
-|||||``|
-|||||``|
-|||||``|
-|||||``|
-|||||``|
+| ACTION              | KEY     | BINDING     | CMD                             |
+|:---                 |:---:    |:---         |:---                             |
+| resize-pane -L 5    |0x1b 0x68|C-M-S-left   |`bind -n M-h resize-pane -L 5`   |
+| resize-pane -R 5    |0x1b 0x6C|C-M-S-right  |`bind -n M-l resize-pane -R 5`   |
+| resize-pane -U 5    |0x1b 0x6A|C-M-S-up     |`bind -n M-j resize-pane -U 5`   |
+| resize-pane -D 5    |0x1b 0x6B|C-M-S-down   |`bind -n M-k resize-pane -D 5`   |
+| select-pane -L      |0x14 0xOE|C-M-left     |`bind -n M-Left select-pane -L`  |
+| select-pane -R      |0x16 0x10|C-M-right    |`bind -n M-Right select-pane -R` |
+| select-pane -U      |0x1b 0x6E|C-M-up       |`bind -n M-Up select-pane -U`    |
+| select-pane -D      |0x1b 0x70|C-M-down     |`bind -n M-Down select-pane -D`  |
+
+## context: 
+| ACTION              | KEY     | BINDING              | CMD|
+|:---                 |:---:    |:---                  |:---|
+|||||
+|||||
 
 
 ### Notes
