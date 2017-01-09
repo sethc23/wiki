@@ -16,38 +16,38 @@
 ## OTHER SPECIALIZED / ADVANCED TOOLS
 
 ### INPUT ANALYSIS (Scancodes, Keycodes & associated decimal, hex, and binary formats)
-- im-config - imput method config framework
-- python-input-pad - gtk-based virtual input application
-- cutecom/xenial 0.22.0-2 amd64  Graphical serial terminal, like minicom
-- kcharselect - special character output to clipboard
-- node-ansi - API for writing ANSI escape codes
+- `im-config` - input method config framework
+- `input-pad` - gtk-based virtual keyboard+ application
+- `cutecom`/xenial 0.22.0-2 amd64  Graphical serial terminal, like minicom
+- `kcharselect` - special character output to clipboard
+- `node-ansi` - API for writing ANSI escape codes
 
 ### CHARACTER FORMATTING
-- bindechexascii
+- `bindechexascii`
 
 ### CHARACTER ENCODING (a.k.a. "CODEC") RECOGITION
-- uchardet - C-based binding for universal charset detection library by Mozilla
-- python[3]-chardet
+- `uchardet` - C-based binding for universal charset detection library by Mozilla
+- python[3]-`chardet`
 - python[3]-libguess
-- tcs - pan-pacific character set encoding
-- uniutils - character encoding and font identification analysis
-- unifont
+- `tcs` - pan-pacific character set encoding
+- `uniutils` - character encoding and font identification analysis
+- `unifont`
 
 ### CHARACTER ENCODE/DECODE
-- iconv
-- enca (libenca-dev) naive chardet analyzer
-- python[3]-unidecode
-- recode
+- `iconv`
+- `enca` (libenca-dev) - naive chardet analyzer
+- `recode`
 
 ### CHARACTER TRANSLATION
-- pypy-unidecode - ASCII transliterations of Unicode
+- pypy-`unidecode` - ASCII transliterations of Unicode
+- python[3]-unidecode
 - golang-github-rainycape-unidecode-dev - ASCII transliterations of Unicode
-- python-translitcodec - Unicode to 8-bit charset
+- python-`translitcodec` - Unicode to 8-bit charset
 
 ### OTHER TOOLS
-- gnome-characters - app for reviewing character map
+- `gnome-characters` - app for reviewing character map
 - python[3]-shellescape - command line tool for maintaining persistent string handling across environments
-- xbindkeys - bind keys to different key codes
+- `xbindkeys` - bind keys to different key codes
 
 * * *
 
