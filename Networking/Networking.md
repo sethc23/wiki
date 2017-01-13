@@ -1,6 +1,9 @@
 ---
 ## Network Classes
 
+https://www.dd-wrt.com/wiki/index.php/IPv6
+https://www.dd-wrt.com/wiki/index.php/IPv6_startup_script
+
 ## IPv4
 ![Network Classes.jpg](http://sethc23.github.io/wiki/Networking/Network_Classes.jpg)
 
