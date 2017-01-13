@@ -1,6 +1,22 @@
 ---
 ## Network Classes
 
+https://ef.gy/forwarding-ipv4-to-ipv6
+
+https://www.tunnelbroker.net/
+https://forums.he.net/index.php?topic=1994.0
+http://checkip.dns.he.net/
+
+git@github.com:craSH/Emissary.git
+https://vpnstaticip.com/download.php
+
+https://www.onioncat.org/2015/12/evading-firewalls-with-onioncat/#more-149
+https://www.onioncat.org/download/
+https://www.torproject.org/docs/tor-doc-unix.html.en#using
+https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO
+https://www.reddit.com/r/ipfs/comments/5blmf0/ipfs_via_onioncat_and_anonymous_proxy/
+https://bluishcoder.co.nz/2016/08/18/using-freenet-over-tor.html
+
 https://www.dd-wrt.com/wiki/index.php/IPv6
 https://www.dd-wrt.com/wiki/index.php/IPv6_startup_script
 
