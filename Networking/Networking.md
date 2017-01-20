@@ -1,5 +1,15 @@
 ---
-## Network Classes
+
+[IPv5](https://community.openvpn.net/openvpn/wiki/IPv6)
+[Easy-RSA](https://community.openvpn.net/openvpn/wiki/EasyRSA3-OpenVPN-Howto)
+
+## Testing
+- ipv4.google.com
+
+Options:
+- tunnel broker?
+- openVPN?
+- 
 
 https://ef.gy/forwarding-ipv4-to-ipv6
 
