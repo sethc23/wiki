@@ -2,14 +2,16 @@
 
 [IPv5](https://community.openvpn.net/openvpn/wiki/IPv6)
 [Easy-RSA](https://community.openvpn.net/openvpn/wiki/EasyRSA3-OpenVPN-Howto)
+- [src](https://github.com/OpenVPN/easy-rsa/blob/master/README.quickstart.md)
 
 ## Testing
 - ipv4.google.com
 
 Options:
-- tunnel broker?
-- openVPN?
-- 
+- [tunnel broker?](https://www.tunnelbroker.net/)
+- [openVPN?](https://community.openvpn.net/openvpn/wiki/WikiStart#UsingOpenVPN)
+  - [HowTo](https://openvpn.net/index.php/open-source/documentation/howto.html#config)
+  - [man](https://community.openvpn.net/openvpn/wiki/Openvpn24ManPage)
 
 https://ef.gy/forwarding-ipv4-to-ipv6
 
