@@ -22,6 +22,7 @@ DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 ```
 
 ### ZSH and Oh-My-Zsh (OMZ)
+- [zsh guide](http://zsh.sourceforge.net/Guide/zshguide06.html)
 
 #### Plugins
 
@@ -34,7 +35,7 @@ DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 - [Z (mod)](https://github.com/rupa/z) @  [Github](https://raw.githubusercontent.com/rupa/z/master/README)
 
 
-  
+
 
 - - -
 - [1unix linux ref.pdf](Linux_Unix/1unix_linux_ref.pdf)
