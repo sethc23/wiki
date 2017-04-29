@@ -43,10 +43,11 @@ https://www.dd-wrt.com/wiki/index.php/IPv6_startup_script
 - MTR
 - `tracepath6`
 
+```bash
 [ -f /proc/net/if_inet6 ] \
   && echo 'IPv6 ready system!' \
   || echo 'No IPv6 support found! Compile the kernel!!'
-
+```
 
 ## [Tor (www.torproject.org)](https://gitweb.torproject.org/tor.git) & [OnionCat](https://www.cypherpunk.at/ocat/download/Source/current/)
 - port 9050, (9150 for tor web browser)
@@ -81,6 +82,10 @@ ping6 -b -I 66.249.83.220 2001:470:1f06:1364::2/64
 ```
 
 ## Tools
+
+### curl
+- `curl --interface 10.0.0.92 http://www.google.com`
+- `curl --insecure -L 87.238.57.232`
 
 ### lsof
 
